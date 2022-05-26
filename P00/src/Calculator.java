@@ -18,7 +18,7 @@ public class Calculator {
 	/**
 	 * @param args
 	 */	
-	//updated new
+	//updated final
 		public int add(int a, int b) {
 			return a + b;	
 		}
