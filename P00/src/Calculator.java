@@ -32,6 +32,10 @@ public class Calculator {
 		}
 		
 		public int divide(int a, int b) {
+			//here
+			if (b == 0) {
+				throw new IllegalArgumentException("Division by zero is not supported");
+			}
 			return a / b;
 		}
 
