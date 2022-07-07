@@ -102,7 +102,7 @@ public class CalculatorTest {
 					
 		//assert
 		double expected = 5.0;
-		int error = 2; //put integer for 'error' ("filled in the error gap")
+		int error = 2; //put integer for 'error' ("filled in the 'error' gap" below)
 		assertEquals(expected, actual, error);
 		
 	}
