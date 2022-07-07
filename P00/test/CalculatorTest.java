@@ -93,16 +93,17 @@ public class CalculatorTest {
 		//fail("Not yet implemented");
 					
 		//arrange 
-		int a = 4;
-		int b = 3;
+		int a = 10;
+		int b = 2;
 		Calculator cal = new Calculator();
 					
 		//act
-		int actual = cal.divide(a, b);
+		double actual = cal.divide(a, b);
 					
 		//assert
-		int expected = 12;
-		assertEquals(expected, actual);
+		double expected = 5.0;
+		int error = 2; //put integer for 'error' ("filled in the error gap")
+		assertEquals(expected, actual, error);
 		
 	}
 	
@@ -112,7 +113,7 @@ public class CalculatorTest {
 		
 		try {
 			Calculator cal = new Calculator();
-			cal.divide(a, c);
+			cal.divide(5, 0);
 			fail("Expected an IllegalArgumentException to be thrown");
 			}catch(IllegalArgumentException e) {
 				assertEquals("Division by zero is not supported", e.getMessage() );
